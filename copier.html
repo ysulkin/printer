@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+	<h4>Number of Copies:</h4>
+	<input type="text" id="numcopies" name="numcopies">
+</form>
+
+<form>
+	<h4>Brightness:</h4>
+	<input type="radio" id="brighter" name="brightness" value="brighter">
+	<label for="brighter">Brighter</label>
+	<input type="radio" id="darker" name="brightness" value="darker">
+	<label for="darker">Darker</label>
+</form>
+
+<form>
+	<h4>Paper Source Bin:</h4>
+	<input type="radio" id="a" name="papersource" value="a">
+	<label for="a">A</label>
+	<input type="radio" id="b" name="papersource" value="b">
+	<label for="b">B</label>
+	<input type="radio" id="c" name="papersource" value="c">
+	<label for="c">C</label>
+</form>
+
+<form>
+	<h4>Sides</h4>
+	<input type="radio" id="oneone" name="sides" value="oneone">
+	<label for="oneone">Single-Sided -> Single-Sided</label><br>
+	<input type="radio" id="twotwo" name="sides" value="twotwo">
+	<label for="twotwo">Double-Sided -> Double-Sided</label><br>
+	<input type="radio" id="onetwo" name="sides" value="onetwo">
+	<label for="onetwo">Single-Sided -> Double-Sided</label><br>
+	<input type="radio" id="twoone" name="sides" value="twoone">
+	<label for="twoone">Double-Sided -> Single-Sided</label>
+</form>
+
+<form>
+	<h4>Seperator Page?</h4>
+	<input type="radio" id="yes" name="seperator" value="yes">
+	<label for="yes">Yes</label>
+	<input type="radio" id="no" name="seperator" value="no">
+	<label for="no">No</label>
+</form>
+
+<form> 
+	<h4>If yes, Paper Source for Seperator:</h4>
+	<input type="radio" id="a" name="papersource" value="a">
+        <label for="a">A</label>
+        <input type="radio" id="b" name="papersource" value="b">
+        <label for="b">B</label>
+        <input type="radio" id="c" name="papersource" value="c">
+        <label for="c">C</label>
+</form>
+
+<form action="copying.html">
+        <button type="submit">Copy</button>
+</form>
+
+</body>
+</html>
+        
