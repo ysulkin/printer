@@ -14,11 +14,43 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-<a href="login.html" class="text-decoration-none">
   <div class="jumbotron text-center" >
-    <h1>Copying...</h1>
+    <h1 id="title">Copying...</h1>
   </div>
-</a>
+  <div class="container col-6">
+    <div class="progress" id='progress-container'>
+      <div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+    </div>
+  </div>
+    <div class="container text-center" id="complete" style="display: none">
+      <form action="copier.html">
+        <button type="submit" class="btn btn-primary" style="margin: 30px">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+  width="24" height="24"
+  viewBox="0 0 172 172"
+  style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g id="original-icon" fill="#ffffff"><path d="M43,14.33333l-40.08854,28.66667l40.08854,28.66667v-21.5h78.83333c19.73633,0 35.83333,16.09701 35.83333,35.83333c0,19.73633 -16.09701,35.83333 -35.83333,35.83333h-35.83333v14.33333h35.83333c27.54688,0 50.16667,-22.61979 50.16667,-50.16667c0,-27.54687 -22.61979,-50.16667 -50.16667,-50.16667h-78.83333zM0,121.83333v14.33333h14.33333v-14.33333zM21.5,121.83333v14.33333h14.33333v-14.33333zM43,121.83333v14.33333h14.33333v-14.33333zM64.5,121.83333v14.33333h14.33333v-14.33333z"></path></g><path d="" fill="none"></path></g></g></svg>
+        </button>
+      </form>
+      <form action="index.html">
+        <button type="submit" class="btn btn-primary" style="margin: 30px">Log Out</button>
+      </form>
+  </div>
+<script>
+  var interval = setInterval(updateCopyProgress, 50);
+  var progress = 0;
+  function updateCopyProgress() {
+    if (progress >= 100) {
+      document.getElementById('progress-bar').style.display = "none";
+      document.getElementById('progress-container').style.display = "none";
+      clearInterval(interval);
+      document.getElementById('complete').style.display = "inline";
+      document.getElementById('title').style.innerHTML = "Complete!";
+    } else {
+      progress++;
+      document.getElementById('progress-bar').style.width = progress + "%";
+    }
 
+  }
+</script>
 </body>
 </html>
