@@ -9,3 +9,13 @@ function setPin(digit) {
   }
 }
 
+function showSeperatorOptions() {
+  var check = document.getElementById("checkbox");
+  var options = document.getElementById("seperator-options");
+
+  if (check.checked == true) {
+    options.style.display = "block";
+  } else {
+    options.style.display = "none";
+  }
+}

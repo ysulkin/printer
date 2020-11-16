@@ -17,10 +17,9 @@
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
-      href="https://img.icons8.com/ultraviolet/40/000000/copy-machine.png"
-	/>
+      href="https://img.icons8.com/ultraviolet/40/000000/copy-machine.png"	/>
 	<script src="buttons.js"></script>
-
+    <script src="script.js"></script>
     <title>Page Setup</title>
   </head>
 
@@ -94,15 +93,14 @@
 			document.getElementById(id).style.background = "lightblue";
 		}
 		</script>
-
     <form>
       <h4 class="checkbox">Seperator Page?</h4>
 	  <div class="form-check checkbox">
-		<input type="checkbox" class="separator-check checkbox" id="checkbox">
+		<input type="checkbox" class="separator-check checkbox" id="checkbox" onclick="showSeperatorOptions()">
 		<label class="checkbox-label checkbox" for="checkbox" id="checkbox"></label>
 	  </div>
     </form>
-
+ <div id="seperator-options" style="display:none">
     <form>
       <h4 class="separator-paper-source">If yes, Paper Source for Seperator:</h4>
       <form class="separator-paper-source">
@@ -113,7 +111,7 @@
         </div>
       </form>
     </form>
-
+    </div>
     <form action="copying.html">
       <button type="submit" class="btn btn-primary">Copy</button>
     </form>
