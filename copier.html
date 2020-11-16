@@ -1,64 +1,101 @@
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<form>
-	<h4>Number of Copies:</h4>
-	<input type="text" id="numcopies" name="numcopies">
-</form>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/ultraviolet/40/000000/copy-machine.png"
+    />
 
-<form>
-	<h4>Brightness:</h4>
-	<input type="radio" id="brighter" name="brightness" value="brighter">
-	<label for="brighter">Brighter</label>
-	<input type="radio" id="darker" name="brightness" value="darker">
-	<label for="darker">Darker</label>
-</form>
+    <title>Page Setup</title>
+  </head>
 
-<form>
-	<h4>Paper Source Bin:</h4>
-	<input type="radio" id="a" name="papersource" value="a">
-	<label for="a">A</label>
-	<input type="radio" id="b" name="papersource" value="b">
-	<label for="b">B</label>
-	<input type="radio" id="c" name="papersource" value="c">
-	<label for="c">C</label>
-</form>
+  <body>
+	  
+	<h1>Copy Settings</h1>
+	
+	<div class="num-copies">
+    	<form>
+      		<h4 id="numcopies-title">Number of Copies:</h4>
+      		<input type="text" id="numcopies-input" name="numcopies" />
+		</form>
+	</div>
 
-<form>
-	<h4>Sides</h4>
-	<input type="radio" id="oneone" name="sides" value="oneone">
-	<label for="oneone">Single-Sided -> Single-Sided</label><br>
-	<input type="radio" id="twotwo" name="sides" value="twotwo">
-	<label for="twotwo">Double-Sided -> Double-Sided</label><br>
-	<input type="radio" id="onetwo" name="sides" value="onetwo">
-	<label for="onetwo">Single-Sided -> Double-Sided</label><br>
-	<input type="radio" id="twoone" name="sides" value="twoone">
-	<label for="twoone">Double-Sided -> Single-Sided</label>
-</form>
+	<div>
+      <h4 class="brightness">Brightness:</h4>
+      <form class="brightness slide-container">
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider brightness"
+		  id="brightness-slider"
+        />
+	  </form>
+	</div>
 
-<form>
-	<h4>Seperator Page?</h4>
-	<input type="radio" id="yes" name="seperator" value="yes">
-	<label for="yes">Yes</label>
-	<input type="radio" id="no" name="seperator" value="no">
-	<label for="no">No</label>
-</form>
+    <div>
+      <h4 class="paper-source">Paper Source Bin:</h4>
+      <form class="paper-source">
+        <div class="btn-group paper-source" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary">A</button>
+          <button type="button" class="btn btn-primary">B</button>
+          <button type="button" class="btn btn-primary">C</button>
+        </div>
+      </form>
+    </div>
 
-<form> 
-	<h4>If yes, Paper Source for Seperator:</h4>
-	<input type="radio" id="a" name="papersource" value="a">
-        <label for="a">A</label>
-        <input type="radio" id="b" name="papersource" value="b">
-        <label for="b">B</label>
-        <input type="radio" id="c" name="papersource" value="c">
-        <label for="c">C</label>
-</form>
+    <form>
+      <h4>Sides:</h4>
+	  <h5>Input</h5>
+	  <button class="btn">               
+		<img src="https://img.icons8.com/color/48/000000/document.png" width="50" height="50"/>
+		<span>Single</span>
+	</button>
+	  <!-- <div class="btn input-button"><span class="icon"></span><a href="https://img.icons8.com/color/48/000000/document.png">Single</a><span></span></div>
+	  <div class="button input-button">
+		<figure><img src="https://img.icons8.com/color/48/000000/document.png"></figure>
+		<div class="text">
+		  Single
+		</div>
+	</div> -->
+	</form>
 
-<form action="copying.html">
-        <button type="submit">Copy</button>
-</form>
+    <form>
+      <h4>Seperator Page?</h4>
+      <input type="radio" id="yes" name="seperator" value="yes" />
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="seperator" value="no" />
+      <label for="no">No</label>
+    </form>
 
-</body>
+    <form>
+      <h4 class="paper-source">If yes, Paper Source for Seperator:</h4>
+      <form class="paper-source">
+        <div class="btn-group paper-source" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary">A</button>
+          <button type="button" class="btn btn-primary">B</button>
+          <button type="button" class="btn btn-primary">C</button>
+        </div>
+      </form>
+    </form>
+
+    <form action="copying.html">
+      <button type="submit" class="btn btn-primary">Copy</button>
+    </form>
+  </body>
 </html>
-        
