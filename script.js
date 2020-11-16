@@ -8,3 +8,4 @@ function setPin(digit) {
     document.getElementById("submit").style.display = "block";
   }
 }
+

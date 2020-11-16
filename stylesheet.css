@@ -1,0 +1,13 @@
+.keypad {
+  width: 75px;
+  height: 75px;
+}
+
+.btn-block {
+  height: 100%;
+  width: 100%;
+}
+
+tr {
+  height: 75px;
+}
