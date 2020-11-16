@@ -4,6 +4,7 @@
   <title>MYKE Printer Copying</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link
       rel="icon"
@@ -16,9 +17,8 @@
 <body>
   <div class="jumbotron text-center" >
     <h1 id="title">Copying...</h1>
-  </div>
   <div class="container col-6">
-    <div class="progress" id='progress-container'>
+    <div class="progress" id='progress-container' style="background-color: white">
       <div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
     </div>
   </div>
@@ -35,6 +35,8 @@
         <button type="submit" class="btn btn-primary" style="margin: 30px">Log Out</button>
       </form>
   </div>
+
+</div>
 <script>
   var interval = setInterval(updateCopyProgress, 50);
   var progress = 0;
