@@ -60,12 +60,29 @@
     </div>
 
     <form>
-      <h4>Sides:</h4>
+	  <h4>Sides:</h4>
+	  <div class="input source-inline">
 	  <h5>Input</h5>
 	  <button class="btn">               
 		<img src="https://img.icons8.com/color/48/000000/document.png" width="50" height="50"/>
 		<span>Single</span>
 	</button>
+	<button class="btn">               
+		<img src="https://img.icons8.com/color/48/000000/copy.png" width="50" height="50"/>
+		<span>Double</span>
+	</button>
+	</div>
+	<div class="output source-inline">
+		<h5>Output</h5>
+		<button class="btn">               
+			<img src="https://img.icons8.com/color/48/000000/document.png" width="50" height="50"/>
+			<span>Single</span>
+		</button>
+		<button class="btn">               
+			<img src="https://img.icons8.com/color/48/000000/copy.png" width="50" height="50"/>
+			<span>Double</span>
+		</button>
+	</div>
 	  <!-- <div class="btn input-button"><span class="icon"></span><a href="https://img.icons8.com/color/48/000000/document.png">Single</a><span></span></div>
 	  <div class="button input-button">
 		<figure><img src="https://img.icons8.com/color/48/000000/document.png"></figure>
@@ -76,11 +93,11 @@
 	</form>
 
     <form>
-      <h4>Seperator Page?</h4>
-      <input type="radio" id="yes" name="seperator" value="yes" />
-      <label for="yes">Yes</label>
-      <input type="radio" id="no" name="seperator" value="no" />
-      <label for="no">No</label>
+      <h4 class="checkbox">Seperator Page?</h4>
+	  <div class="form-check checkbox">
+		<input type="checkbox" class="separator-check checkbox" id="checkbox">
+		<label class="checkbox-label checkbox" for="checkbox" id="checkbox"></label>
+	  </div>
     </form>
 
     <form>
