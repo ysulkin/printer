@@ -24,101 +24,104 @@
   </head>
 
   <body>
-	<div class="jumbotron">
-		<h1>Copy Settings</h1>
+	<div class="jumbotron row">
+    <div class="container col-8">
+  		<h1>Copy Settings</h1>
 
-		<div class="num-copies">
-	    	<form>
-	      		<h4 id="numcopies-title">Number of Copies:</h4>
-	      		<input type="number" id="numcopies-input" name="numcopies" style="width: 50px; height 100px;" />
-			</form>
-		</div>
+  		<div class="num-copies">
+  	    	<form>
+  	      		<h4 id="numcopies-title">Number of Copies:</h4>
+  	      		<input type="number" id="numcopies-input" name="numcopies" style="width: 50px; height 100px;" />
+  			</form>
+  		</div>
 
-		<div>
-	      <h4 class="brightness">Brightness:</h4>
-	      <form class="brightness slide-container">
-	        <input
-	          type="range"
-	          min="1"
-	          max="100"
-	          value="50"
-	          class="slider brightness"
-			  id="brightness-slider"
-	        />
-		  </form>
-		</div>
+  		<div>
+  	      <h4 class="brightness">Brightness:</h4>
+  	      <form class="brightness slide-container">
+  	        <input
+  	          type="range"
+  	          min="1"
+  	          max="100"
+  	          value="50"
+  	          class="slider brightness"
+  			  id="brightness-slider"
+  	        />
+  		  </form>
+  		</div>
 
-	    <div>
-	      <h4 class="paper-source">Paper Source Bin:</h4>
-	      <form class="paper-source">
-	        <div class="btn-group paper-source" role="group" aria-label="Basic example">
-	          <button name="button-1" type="button" class="btn btn-primary">A</button>
-	          <button name="button-1" type="button" class="btn btn-primary">B</button>
-	          <button name="button-1" type="button" class="btn btn-primary">C</button>
-	        </div>
-	      </form>
-	    </div>
-
-	    <form>
-			<h4>Sides:</h4>
-			<div class="input source-inline">
-			<h5>Input</h5>
-			<button class="sides-btn" id="input-btn1" type="button" onClick="inputHighlight(this.id)">                
-			  <img src="https://img.icons8.com/color/48/000000/document.png" width="50" height="50"/>
-			  <span>Single</span>
-		  </button>
-		  <button class="sides-btn" id="input-btn2" type="button" onClick="inputHighlight(this.id)">               
-			  <img src="https://img.icons8.com/color/48/000000/copy.png" width="50" height="50"/>
-			  <span>Double</span>
-		  </button>
-		  </div>
-		  <div class="output source-inline">
-			  <h5>Output</h5>
-			  <button class="sides-btn" id="output-btn1" type="button" onClick="outputHighlight(this.id)">               
-				  <img src="https://img.icons8.com/color/48/000000/document.png" width="50" height="50"/>
-				  <span>Single</span>
-			  </button>
-			  <button class="sides-btn" id="output-btn2" type="button" onClick="outputHighlight(this.id)">               
-				  <img src="https://img.icons8.com/color/48/000000/copy.png" width="50" height="50"/>
-				  <span>Double</span>
-			  </button>
-		  </div>
-		  </form>
-	  
-		  <script>
-			  function inputHighlight(id) {
-				document.getElementById(id).style.background = "lightblue";
-			  }
-			  function outputHighlight(id){
-				  document.getElementById(id).style.background = "lightblue";
-			  }
-			  </script>
-
-	    <form>
-	      <h4 class="checkbox">Seperator Page?</h4>
-		  <div class="form-check checkbox">
-			<input type="checkbox" class="separator-check checkbox" id="checkbox" onclick="showSeperatorOptions()">
-			<label class="checkbox-label checkbox" for="checkbox"></label>
-		  </div>
-	    </form>
-      <div id="seperator-options" style="display:none">
-  	    <form>
-  	      <h4 class="paper-source">If yes, Paper Source for Seperator:</h4>
+  	    <div>
+  	      <h4 class="paper-source">Paper Source Bin:</h4>
   	      <form class="paper-source">
   	        <div class="btn-group paper-source" role="group" aria-label="Basic example">
-  	          <button name="button-2"type="button" class="btn btn-primary">A</button>
-  	          <button name="button-2"type="button" class="btn btn-primary">B</button>
-  	          <button name="button-2"type="button" class="btn btn-primary">C</button>
+  	          <button name="button-1" type="button" class="btn btn-primary">A</button>
+  	          <button name="button-1" type="button" class="btn btn-primary">B</button>
+  	          <button name="button-1" type="button" class="btn btn-primary">C</button>
   	        </div>
   	      </form>
-        </div>
-  	    </form>
+  	    </div>
 
+  	    <form>
+  			<h4>Sides:</h4>
+  			<div class="input source-inline">
+  			<h5>Input</h5>
+  			<button class="sides-btn" id="input-btn1" type="button" onClick="inputHighlight(this.id)">
+  			  <img src="https://img.icons8.com/color/48/000000/document.png" width="50" height="50"/>
+  			  <span>Single</span>
+  		  </button>
+  		  <button class="sides-btn" id="input-btn2" type="button" onClick="inputHighlight(this.id)">
+  			  <img src="https://img.icons8.com/color/48/000000/copy.png" width="50" height="50"/>
+  			  <span>Double</span>
+  		  </button>
+  		  </div>
+  		  <div class="output source-inline">
+  			  <h5>Output</h5>
+  			  <button class="sides-btn" id="output-btn1" type="button" onClick="outputHighlight(this.id)">
+  				  <img src="https://img.icons8.com/color/48/000000/document.png" width="50" height="50"/>
+  				  <span>Single</span>
+  			  </button>
+  			  <button class="sides-btn" id="output-btn2" type="button" onClick="outputHighlight(this.id)">
+  				  <img src="https://img.icons8.com/color/48/000000/copy.png" width="50" height="50"/>
+  				  <span>Double</span>
+  			  </button>
+  		  </div>
+  		  </form>
+
+  		  <script>
+  			  function inputHighlight(id) {
+  				document.getElementById(id).style.background = "lightblue";
+  			  }
+  			  function outputHighlight(id){
+  				  document.getElementById(id).style.background = "lightblue";
+  			  }
+  			  </script>
+
+  	    <form>
+  	      <h4 class="checkbox">Seperator Page?</h4>
+  		  <div class="form-check checkbox">
+  			<input type="checkbox" class="separator-check checkbox" id="checkbox" onclick="showSeperatorOptions()">
+  			<label class="checkbox-label checkbox" for="checkbox"></label>
+  		  </div>
+  	    </form>
+        <div id="seperator-options" style="display:none">
+    	    <form>
+    	      <h4 class="paper-source" style="margin-left: 50px;">Paper Source for Seperator:</h4>
+    	      <form class="paper-source">
+    	        <div class="btn-group paper-source" role="group" aria-label="Basic example">
+    	          <button name="button-2"type="button" class="btn btn-primary">A</button>
+    	          <button name="button-2"type="button" class="btn btn-primary">B</button>
+    	          <button name="button-2"type="button" class="btn btn-primary">C</button>
+    	        </div>
+    	      </form>
+          </div>
+    	    </form>
+        </div>
+      <div class="container col-2">
   	    <form action="copying.html">
 			<button type="submit" class="btn btn-primary" id="copy-button">
 				<img src="https://img.icons8.com/ultraviolet/40/000000/print.png" width="50" height="50"/>
 				<span>Copy</span></button>
 		  </form>
+    </div>
 		</div>
   </body>
 </html>
