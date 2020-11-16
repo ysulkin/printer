@@ -19,7 +19,7 @@
       rel="icon"
       href="https://img.icons8.com/ultraviolet/40/000000/copy-machine.png"
     />
-
+    <script src="script.js"></script>
     <title>Page Setup</title>
   </head>
 
@@ -95,25 +95,26 @@
 	    <form>
 	      <h4 class="checkbox">Seperator Page?</h4>
 		  <div class="form-check checkbox">
-			<input type="checkbox" class="separator-check checkbox" id="checkbox" onclick="showPaperSource()">
-			<label class="checkbox-label checkbox" for="checkbox" id="checkbox"></label>
+			<input type="checkbox" class="separator-check checkbox" id="checkbox" onclick="showSeperatorOptions()">
+			<label class="checkbox-label checkbox" for="checkbox"></label>
 		  </div>
 	    </form>
+      <div id="seperator-options" style="display:none">
+  	    <form>
+  	      <h4 class="paper-source">If yes, Paper Source for Seperator:</h4>
+  	      <form class="paper-source">
+  	        <div class="btn-group paper-source" role="group" aria-label="Basic example">
+  	          <button name="button-2"type="button" class="btn btn-primary">A</button>
+  	          <button name="button-2"type="button" class="btn btn-primary">B</button>
+  	          <button name="button-2"type="button" class="btn btn-primary">C</button>
+  	        </div>
+  	      </form>
+        </div>
+  	    </form>
 
-	    <form>
-	      <h4 class="paper-source">If yes, Paper Source for Seperator:</h4>
-	      <form class="paper-source">
-	        <div class="btn-group paper-source" role="group" aria-label="Basic example">
-	          <button name="button-2"type="button" class="btn btn-primary">A</button>
-	          <button name="button-2"type="button" class="btn btn-primary">B</button>
-	          <button name="button-2"type="button" class="btn btn-primary">C</button>
-	        </div>
-	      </form>
-	    </form>
-
-	    <form action="copying.html">
-	      <button type="submit" class="btn btn-primary">Copy</button>
-	    </form>
+  	    <form action="copying.html">
+  	      <button type="submit" class="btn btn-primary">Copy</button>
+  	    </form>
 		</div>
   </body>
 </html>
