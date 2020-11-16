@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MYKE Printer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+<div class="jumbotron text-center">
+	<h1>Enter Account Code:</h1>
+	<div class="container">
+		<table class="table table-borderless">
+				<tr>
+					<th style="width: 50px; height: 50px" ></th>
+					<th><button style="width: 50px; height: 50px" type="button" class="btn btn-outline-dark btn-block"><h3 id="pin-1"></h3></button></th>
+					<th><button style="width: 50px; height: 50px" type="button" class="btn btn-outline-dark btn-block"><h3 id="pin-2"></h3></button></th>
+					<th><button style="width: 50px; height: 50px" type="button" class="btn btn-outline-dark btn-block"><h3 id="pin-3"></h3></button></th>
+					<th><button style="width: 50px; height: 50px"type="button" class="btn btn-outline-dark btn-block"><h3 id="pin-4"></h3></button></th>
+					<th style="width: 100px; height: 75px">
+						<form action="copier.html">
+							<button type="submit" style="width: 75px; height: 50px; display: none" class="btn btn-success btn-block" id="submit">Enter</button>
+						</form>
+					</th>
+				</tr>
+			</table>
+
+
+
+	<div class="container">
+		<table class="table table-borderless">
+				<tr>
+					<th class="keypad"><button type="button" class="btn btn-secondary btn-block" onclick="setPin(1)" ><h3>1</h3></button></th>
+					<th class="keypad"><button type="button" class="btn btn-secondary btn-block" onclick="setPin(2)"><h3>2</h3></button></th>
+					<th class="keypad"><button type="button" class="btn btn-secondary btn-block" onclick="setPin(3)"><h3>3</h3></button></th>
+				</tr>
+				<tr>
+					<th class="keypad"><button type="button" class="btn btn-secondary btn-block" onclick="setPin(4)"><h3>4</h3></button></th>
+					<th class="keypad"><button type="button" class="btn btn-secondary btn-block" onclick="setPin(5)"><h3>5</h3></button></th>
+					<th class="keypad"><button type="button" class="btn btn-secondary btn-block" onclick="setPin(6)"><h3>6</h3></button></th>
+				</tr>
+				<tr>
+					<th class="keypad"><button type="button" class="btn btn-secondary btn-block" onclick="setPin(7)"><h3>7</h3></button></th>
+					<th class="keypad"><button type="button" class="btn btn-secondary btn-block"onclick="setPin(8)"><h3>8</h3></button></th>
+					<th class="keypad"><button type="button" class="btn btn-secondary btn-block" onclick="setPin(9)"><h3>9</h3></button></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th class="keypad"><button type="button" class="btn btn-secondary btn-block" onclick="setPin(0)"><h3>0</h3></button></th>
+					<th></th>
+				</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>
