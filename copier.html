@@ -30,7 +30,7 @@
 		<div class="num-copies">
 	    	<form>
 	      		<h4 id="numcopies-title">Number of Copies:</h4>
-	      		<input type="text" id="numcopies-input" name="numcopies" />
+	      		<input type="number" id="numcopies-input" name="numcopies" style="width: 50px; height 100px;" />
 			</form>
 		</div>
 
@@ -52,9 +52,9 @@
 	      <h4 class="paper-source">Paper Source Bin:</h4>
 	      <form class="paper-source">
 	        <div class="btn-group paper-source" role="group" aria-label="Basic example">
-	          <button type="button" class="btn btn-primary">A</button>
-	          <button type="button" class="btn btn-primary">B</button>
-	          <button type="button" class="btn btn-primary">C</button>
+	          <button name="button-1" type="button" class="btn btn-primary">A</button>
+	          <button name="button-1" type="button" class="btn btn-primary">B</button>
+	          <button name="button-1" type="button" class="btn btn-primary">C</button>
 	        </div>
 	      </form>
 	    </div>
@@ -63,22 +63,22 @@
 		  <h4>Sides:</h4>
 		  <div class="input source-inline">
 		  <h5>Input</h5>
-		  <button class="btn">
+		  <button type="button" class="btn">
 			<img src="https://img.icons8.com/color/48/000000/document.png" width="50" height="50"/>
 			<span>Single</span>
 		</button>
-		<button class="btn">
+		<button type="button" class="btn">
 			<img src="https://img.icons8.com/color/48/000000/copy.png" width="50" height="50"/>
 			<span>Double</span>
 		</button>
 		</div>
 		<div class="output source-inline">
 			<h5>Output</h5>
-			<button class="btn">
+			<button type="button" class="btn">
 				<img src="https://img.icons8.com/color/48/000000/document.png" width="50" height="50"/>
 				<span>Single</span>
 			</button>
-			<button class="btn">
+			<button type="button" class="btn">
 				<img src="https://img.icons8.com/color/48/000000/copy.png" width="50" height="50"/>
 				<span>Double</span>
 			</button>
@@ -95,7 +95,7 @@
 	    <form>
 	      <h4 class="checkbox">Seperator Page?</h4>
 		  <div class="form-check checkbox">
-			<input type="checkbox" class="separator-check checkbox" id="checkbox">
+			<input type="checkbox" class="separator-check checkbox" id="checkbox" onclick="showPaperSource()">
 			<label class="checkbox-label checkbox" for="checkbox" id="checkbox"></label>
 		  </div>
 	    </form>
@@ -104,9 +104,9 @@
 	      <h4 class="paper-source">If yes, Paper Source for Seperator:</h4>
 	      <form class="paper-source">
 	        <div class="btn-group paper-source" role="group" aria-label="Basic example">
-	          <button type="button" class="btn btn-primary">A</button>
-	          <button type="button" class="btn btn-primary">B</button>
-	          <button type="button" class="btn btn-primary">C</button>
+	          <button name="button-2"type="button" class="btn btn-primary">A</button>
+	          <button name="button-2"type="button" class="btn btn-primary">B</button>
+	          <button name="button-2"type="button" class="btn btn-primary">C</button>
 	        </div>
 	      </form>
 	    </form>
