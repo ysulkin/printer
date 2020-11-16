@@ -17,6 +17,11 @@
     margin-right: 10px;
 }
 
+.separator-paper-source{
+    display: inline-block;
+    margin-right: 10px;
+}
+
 .checkbox{
     display: inline-block;
 }
@@ -39,31 +44,24 @@ input[type=checkbox] {width:20px; height:20px;}
     font-size: 16px;
 }
 
+
 .source-inline {
     display: inline-block;
     margin-right: 20px;
 }
 
-.jumbotron {
-    width: 1000px;
-    height: 600px;
+body {
     margin-left: 10px;
     margin-top: 10px;
+    background-color: lightgray;
 }
 
 h4{
     padding-top: 10px;
 }
-.keypad {
-  width: 75px;
-  height: 75px;
-}
 
-.btn-block {
-  height: 100%;
-  width: 100%;
-}
-
-tr {
-  height: 75px;
+#copy-button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
